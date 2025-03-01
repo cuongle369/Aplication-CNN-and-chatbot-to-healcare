@@ -63,7 +63,7 @@ def load_model():
     model = Cnn(num_classes=4).to(device)
 
     # Đường dẫn đến file checkpoint
-    checkpoint_path = "F:/pythonProject/spring2025/DAP303\DAP_project/trained_model/best_cnn.pt"
+    checkpoint_path = os.path.join("trained_model", "best_cnn.pt")
 
     if not os.path.exists(checkpoint_path):
         st.error(f"Không tìm thấy file model tại {checkpoint_path}")
