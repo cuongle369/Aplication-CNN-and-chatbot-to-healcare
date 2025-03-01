@@ -63,7 +63,7 @@ def load_model():
     model = Cnn(num_classes=4).to(device)
 
     # Đường dẫn đến file checkpoint
-    checkpoint_path = os.path.join("trained_model", "best_cnn.pt")
+    checkpoint_path = os.path.join("Downloads", "best_cnn (1).pt")
 
     if not os.path.exists(checkpoint_path):
         st.error(f"Không tìm thấy file model tại {checkpoint_path}")
