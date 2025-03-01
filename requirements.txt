@@ -1,0 +1,7 @@
+streamlit
+torch
+torchvision
+google-generativeai
+opencv-python
+Pillow
+matplotlib
